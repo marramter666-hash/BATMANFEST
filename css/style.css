@@ -1,0 +1,78 @@
+:root {
+    --color-principal: #000000;
+    --color-secundario: #F2E500;
+    --color-tercero: #3B4970;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNCIONES GENERALES */
+img {
+    height: 6vh;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--color-tercero);
+}
+
+.fondofijo {
+    position: fixed;
+    height: auto;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-image: url('galeria/fondo/FONDO.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* HEADER */
+header {
+    margin: 0;
+    padding: 2vh 3vw 2vh 3vw;
+    box-sizing: border-box;
+    background-color: var(--color-secundario);
+    /* position: fixed; */
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div > :last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20vw;
+}
+
+.botonheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3vw;
+}
+
+section {
+    margin: 5vh 5vw;
+    padding: 2vh 3vw 2vh 3vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.principal {
+    height: 85vh;
+    width: auto;
+}
+
+/* MEDIA QUERIES */
