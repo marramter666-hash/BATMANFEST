@@ -78,23 +78,56 @@ header > div > :last-child {
 }
 
 .principal {
-    margin: 15vh 5vw 5vh 5vw;
+    margin: 15vh 5vw 0vh 5vw;
     padding: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     color: black;
     background: transparent;
 }
 
 .principalimg {
-    height: 85vh;
+    height: 90vh;
     width: auto;
+    transition: 0.4s;
+}
+
+.principalimg:hover {
+    transform: rotate(-10deg) scale(1.1);
+    transition: 0.4s;
+    margin: 0 1vw 0 1vw;
+}
+
+.seleccion {
+    margin: 0;
+    padding: 15vh 5vw 5vh 5vw;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+.informacion {
+    margin: 0;
+    padding: 15vh 5vw 5vh 5vw;
+    box-sizing: border-box;
+    background-color: white;
 }
 
 footer {
-    background-color: aqua;
+    margin: 0;
+    padding: 5vh 3vw 5vh 3vw;
+    box-sizing: border-box;
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > :first-child > :last-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 /* MEDIA QUERIES */
