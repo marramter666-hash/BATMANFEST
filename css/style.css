@@ -22,15 +22,25 @@ a {
     color: var(--color-tercero);
 }
 
+li {
+  list-style: none;
+}
+
 .fondofijo {
     position: fixed;
-    height: auto;
+    height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
-    background-image: url('galeria/fondo/FONDO.png'); 
+    background-image: url('../galeria/fondo/FONDO.png'); 
     background-size: cover;
     background-position: center;
+    z-index: -1;
+}
+
+.fondonegro {
+    position: relative;
+    z-index: 1; 
 }
 
 /* HEADER */
@@ -39,7 +49,12 @@ header {
     padding: 2vh 3vw 2vh 3vw;
     box-sizing: border-box;
     background-color: var(--color-secundario);
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    border-bottom: solid 7px #000000;
 }
 
 header > div {
@@ -52,7 +67,7 @@ header > div > :last-child {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 20vw;
+    gap: 21vw;
 }
 
 .botonheader {
@@ -62,17 +77,24 @@ header > div > :last-child {
     gap: 3vw;
 }
 
-section {
-    margin: 5vh 5vw;
-    padding: 2vh 3vw 2vh 3vw;
+.principal {
+    margin: 15vh 5vw 5vh 5vw;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    height: 100vh;
+    color: black;
+    background: transparent;
 }
 
-.principal {
+.principalimg {
     height: 85vh;
     width: auto;
+}
+
+footer {
+    background-color: aqua;
 }
 
 /* MEDIA QUERIES */
