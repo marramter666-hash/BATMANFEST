@@ -20,6 +20,17 @@ a {
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--color-tercero);
+    font-size: 2rem;
+    display: inline-block;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+p {
+    font-size: 1.7rem;
+    font-family: "classic-comic", sans-serif;
 }
 
 li {
@@ -46,7 +57,7 @@ li {
 /* HEADER */
 header {
     margin: 0;
-    padding: 2vh 3vw 2vh 3vw;
+    padding: 2vh 3vw 8vh 3vw;
     box-sizing: border-box;
     background-color: var(--color-secundario);
     position: fixed;
@@ -67,14 +78,14 @@ header > div > :last-child {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 21vw;
+    gap: 6vw;
 }
 
 .botonheader {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 3vw;
+    gap: 1.2vw;
 }
 
 .principal {
@@ -109,10 +120,21 @@ header > div > :last-child {
 
 .informacion {
     margin: 0;
-    padding: 15vh 5vw 5vh 5vw;
+    padding: 5vh 5vw 5vh 5vw;
     box-sizing: border-box;
     background-color: white;
 }
+
+.informacion > :first-child > div {
+    margin: 0vh 30vw 0vh 20vw;
+    padding: 5vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px #000000;
+    background-color: #F2E500;
+    display: flex;
+    justify-content: center;
+}
+
 
 footer {
     margin: 0;
