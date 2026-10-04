@@ -12,7 +12,7 @@
 
 /* FUNCIONES GENERALES */
 img {
-    height: 6vh;
+    height: 30vh;
     width: auto;
 }
 
@@ -104,6 +104,11 @@ header > div > :last-child {
     gap: 1.2vw;
 }
 
+.logo {
+    height: 6vh;
+    width: auto;
+}
+
 
 
 
@@ -159,7 +164,7 @@ header > div > :last-child {
 }
 
 .informacion > :first-child > :last-child {
-    margin: -3vh 20vw 5vh 45vw;
+    margin: 2vh 20vw 5vh 45vw;
     padding: 3vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
@@ -178,19 +183,25 @@ header > div > :last-child {
     justify-content: center;
 }
 
-.informacion > :last-child {
+.entradaono {
     margin: 10vh 30vw 5vh 30vw;
-    padding: 5vh 1vw;
+    padding: 5vh 5vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-principal);
     display: flex;
     justify-content: center;
+    font-size: 2.9rem;
 }
 
+
+
+
+
+/* SECCIÓN PATROCINADORES */
 .patrocinadores {
     margin: 0;
-    padding: 10vh 5vw 10vh 5vw;
+    padding: 10vh 3vw 10vh 3vw;
     box-sizing: border-box;
 }
 
@@ -203,6 +214,35 @@ header > div > :last-child {
     display: flex;
     justify-content: center;
     transform: skewX(-20deg); 
+}
+
+.patrocinadores > :last-child {
+    margin: 5vh 10vw;
+    padding: 7vh 1vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 2.5vw;
+}
+
+.logopatro {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid 6px var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 20vw;
+}
+
+.imgpatro {
+    height: auto;
+    width: 15vw;
 }
 
 .galeria {
