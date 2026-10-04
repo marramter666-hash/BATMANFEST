@@ -81,6 +81,7 @@ header {
     height: 10vh;
     width: 100vw;
     border-bottom: solid 7px #000000;
+    z-index: 100; 
 }
 
 header > div {
@@ -193,12 +194,23 @@ header > div > :last-child {
     box-sizing: border-box;
 }
 
+.patrocinadores > :first-child {
+    margin: 10vh 20vw 5vh 2vw; 
+    padding: 5vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-tercero);
+    display: flex;
+    justify-content: center;
+    transform: skewX(-20deg); 
+}
+
 .galeria {
     margin: 0;
     padding: 10vh 5vw 10vh 5vw;
     box-sizing: border-box;
     /* background-color: var(--color-tercero); */
-    background: linear-gradient(var(--color-principal),var(--color-tercero));
+    background: linear-gradient(var(--color-tercero),var(--color-principal));
     border-top: solid 7px var(--color-principal);
     border-bottom: solid 7px var(--color-principal);
 }
