@@ -292,7 +292,6 @@ footer > :first-child > :first-child > :first-child > li {
     margin: 0;
     padding: 2vh 0vw;
     box-sizing: border-box;
-    /* background-color: #59f200; */
 }
 
 footer > :first-child > :first-child > :last-child {
@@ -301,13 +300,26 @@ footer > :first-child > :first-child > :last-child {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    /* background-color: rgb(161, 177, 177); */
 }
 
-/* footer > :first-child > :last-child {
+footer > :first-child > :last-child {
+    margin: 0;
+    padding: 5vh 0vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > :first-child > :last-child > div {
+    margin: 0;
+    padding: 3vh 0vw;
+}
+
+footer > :first-child > :last-child > :last-child {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-} */
+    gap: 1.1vw;
+}
 
 /* MEDIA QUERIES */
