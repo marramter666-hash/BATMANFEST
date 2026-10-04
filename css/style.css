@@ -252,11 +252,31 @@ header > div > :last-child {
     margin: 0;
     padding: 10vh 5vw 10vh 5vw;
     box-sizing: border-box;
-    /* background-color: var(--color-tercero); */
     background: linear-gradient(var(--color-tercero),var(--color-principal));
     border-top: solid 7px var(--color-principal);
     border-bottom: solid 7px var(--color-principal);
 }
+
+.actividadono {
+    color: var(--color-secundario);
+    font-family: "cc-smash", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.galeria > :first-child {
+    margin: 0;
+    padding: 0vh 0vw 10vh 0vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+
+
 
 /* FOOTER */
 .imgfooter{
