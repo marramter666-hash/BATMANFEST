@@ -147,7 +147,6 @@ header > div > :last-child {
     margin: 0;
     padding: 10vh 5vw 10vh 5vw;
     box-sizing: border-box;
-    /* background-color: var(--color-tercero); */
     background: linear-gradient(var(--color-principal),var(--color-tercero));
     border-top: solid 7px var(--color-principal);
     border-bottom: solid 7px var(--color-principal);
@@ -169,8 +168,6 @@ header > div > :last-child {
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-secundario);
-    display: flex;
-    justify-content: center;
 }
 
 .informacion > :nth-child(2) {
@@ -183,15 +180,21 @@ header > div > :last-child {
     justify-content: center;
 }
 
-.entradaono {
-    margin: 10vh 30vw 5vh 30vw;
+.informacion > :last-child {
+    margin: 10vh 0vw 5vh 0vw;
     padding: 5vh 5vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.entradaono {
+    margin: 0vh 0vw 0vh 0vw;
+    padding: 5vh 2vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-principal);
-    display: flex;
-    justify-content: center;
-    font-size: 2.9rem;
+    font-size: 3rem;
 }
 
 
@@ -236,13 +239,13 @@ header > div > :last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 25vh;
     width: 20vw;
 }
 
 .imgpatro {
     height: auto;
-    width: 15vw;
+    width: 8vw;
 }
 
 .galeria {
@@ -255,20 +258,36 @@ header > div > :last-child {
     border-bottom: solid 7px var(--color-principal);
 }
 
+/* FOOTER */
+.imgfooter{
+    height: auto;
+    width: 4vw;
+}
+
 footer {
     margin: 0;
     padding: 5vh 3vw 5vh 3vw;
     box-sizing: border-box;
     background-color: var(--color-secundario);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-footer > :first-child > :last-child {
+footer > :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: aqua;
+}
+
+footer > :first-child > :first-child {
+    /* display: flex; */
+    /* align-items: self-end; */
+    background-color: rgb(161, 177, 177);
+}
+
+/* footer > :first-child > :last-child {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-}
+} */
 
 /* MEDIA QUERIES */
