@@ -210,7 +210,7 @@ header > div > :last-child {
 }
 
 .patrocinadores > :first-child {
-    margin: 10vh 20vw 5vh 2vw; 
+    margin: 5vh 20vw 5vh 2vw; 
     padding: 5vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
@@ -256,7 +256,7 @@ header > div > :last-child {
 /* SECCIÓN GALERIA */
 .galeria {
     margin: 0;
-    padding: 10vh 5vw 20vh 5vw;
+    padding: 10vh 5vw 10vh 5vw;
     box-sizing: border-box;
     background: linear-gradient(var(--color-tercero),var(--color-principal));
     border-top: solid 7px var(--color-principal);
@@ -273,7 +273,7 @@ header > div > :last-child {
 
 .galeria > :first-child {
     margin: 0;
-    padding: 0vh 0vw 10vh 0vw;
+    padding: 0vh 0vw 5vh 0vw;
     box-sizing: border-box;
     display: flex;
     justify-content: right;
@@ -297,6 +297,12 @@ header > div > :last-child {
     transition: 0.8s;
 }
 
+.comic {
+    font-family: "cc-smash-open", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .hoverimg {
     display: grid;
     place-items: center;
@@ -308,13 +314,23 @@ header > div > :last-child {
     padding: 0;
     box-sizing: border-box;
     color: rgb(242, 229, 0, 1);
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.7);
     transition: background-color 0.8s;
 }
 
-.galeria > :last-child > nav {
+.galeria > :nth-child(2) > nav {
+    margin: 5vh 0vw;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+}
+
+.activis {
+    margin: 5vh 3vw;
+    padding: 5vh 2vw;
+    box-sizing: border-box;
+    color: var(--color-secundario);
 }
 
 
