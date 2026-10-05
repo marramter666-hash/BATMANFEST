@@ -280,6 +280,11 @@ header > div > :last-child {
 
 /* FOOTER */
 .imgfooter{
+    height: 4vh;
+    width: auto;
+}
+
+.footerimg{
     height: auto;
     width: 4vw;
 }
@@ -343,3 +348,148 @@ footer > :first-child > :last-child > :last-child {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width:480px) {
+/* FUNCIONES GENERALES */
+img {
+    height: 20vh;
+    width: auto;
+}
+
+a {
+    font-size: 2rem;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+p {
+    font-size: 1.7rem;
+    font-family: "classic-comic", sans-serif;
+}
+
+/* .black {
+    font-family: "classic-comic", sans-serif;
+} */
+
+.onomatopeya {
+    font-family: "cc-smash", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.fondofijo {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-image: url('../galeria/fondo/FONDO.png'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.fondonegro {
+    position: relative;
+    z-index: 1; 
+}
+
+/* HEADER */
+    header {
+        margin: 0;
+        padding: 2vh 3vw 0vh 3vw;
+        box-sizing: border-box;
+    }
+
+    .botonheader {
+        display: none;
+    }
+
+    .logo {
+        height: 4vh;
+        width: auto;
+    }
+
+    
+
+
+
+/* SECCIÓN IMGÁGEN */
+    .principal {
+        height: 30vh;
+    }
+
+    .principalimg {
+        height: 30vh;
+        width: auto;
+    }
+
+/* FOOTER */
+    .imgfooter{
+        height: 4vh;
+        width: auto;
+    }
+
+    .footerimg{
+        height: 8vh;
+        width: auto;
+    }
+
+    footer > :first-child {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > :first-child > :first-child > :first-child > li {
+        margin: 0;
+        padding:  0vh 0vw 7vh 0vw;
+        box-sizing: border-box;
+    }
+
+    footer > :first-child > :first-child > :first-child > div > li {
+        margin: 0;
+        padding: 2vh 0vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > :first-child > :first-child > :last-child {
+        margin: 0;
+        padding: 5vh 0vw 0vh 0vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > :first-child > :first-child > :last-child > li {
+        margin: 0;
+        padding: 2vh 0vw;
+        box-sizing: border-box;
+    }
+
+    footer > :first-child > :last-child > :last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > :first-child > :last-child > :last-child > a {
+       margin: 0;
+       padding: 2vh 0vw;
+       box-sizing: border-box; 
+       font-size: 3rem;
+    }
+}
