@@ -396,9 +396,9 @@ footer > :first-child > :last-child {
     align-items: center;
 }
 
-footer > :first-child > :last-child > div {
+footer > :first-child > :last-child > nav {
     margin: 0;
-    padding: 2vh 0vw;
+    padding: 3vh 0vw;
 }
 
 footer > :first-child > :last-child > :last-child {
