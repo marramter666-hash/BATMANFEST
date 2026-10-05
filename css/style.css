@@ -195,6 +195,7 @@ header > div > :last-child {
     border: solid 7px var(--color-principal);
     background-color: var(--color-principal);
     font-size: 3rem;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -315,7 +316,7 @@ footer > :first-child {
 
 footer > :first-child > :first-child > :first-child > li {
     margin: 0;
-    padding: 2vh 0vw;
+    padding: 2vh 0vw 5vh 0vw;
     box-sizing: border-box;
 }
 
