@@ -455,7 +455,7 @@ footer > :first-child > :last-child > :last-child {
         font-size: 2rem;
     }
 
-    
+
 /* SECCIÓN PATROCINADORES */
     .patrocinadores {
         margin: 0;
@@ -468,57 +468,41 @@ footer > :first-child > :last-child > :last-child {
         padding: 5vh 1vw;
     }
 
-.patrocinadores > :last-child {
-    margin: 5vh 10vw;
-    padding: 7vh 1vw;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5vw;
-}
+    .patrocinadores > :last-child {
+        margin: 5vh 5vw;
+        padding: 5vh 5vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.logopatro {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: solid 6px var(--color-principal);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-    width: 20vw;
-}
+    .logopatro {
+        height: 20vh;
+        width: 70vw;
+    }
 
-.imgpatro {
-    height: auto;
-    width: 8vw;
-}
+    .imgpatro {
+        height: auto;
+        width: 20vw;
+    }
 
+
+
+
+
+
+/* GALERIA */
 .galeria {
     margin: 0;
-    padding: 10vh 5vw 10vh 5vw;
+    padding: 5vh 5vw 10vh 5vw;
     box-sizing: border-box;
-    background: linear-gradient(var(--color-tercero),var(--color-principal));
-    border-top: solid 7px var(--color-principal);
-    border-bottom: solid 7px var(--color-principal);
 }
 
 .actividadono {
-    color: var(--color-secundario);
-    font-family: "cc-smash", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
-.galeria > :first-child {
-    margin: 0;
-    padding: 0vh 0vw 10vh 0vw;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: right;
-}
 
 
 
@@ -546,8 +530,12 @@ footer > :first-child > :last-child > :last-child {
 
     footer > :first-child > :first-child > :first-child > li {
         margin: 0;
-        padding:  0vh 0vw 7vh 0vw;
+        padding:  0vh 0vw 4vh 0vw;
         box-sizing: border-box;
+    }
+
+    .entradafooter {
+        font-size: 3rem;
     }
 
     footer > :first-child > :first-child > :first-child > div > li {
