@@ -273,14 +273,15 @@ header > div > :last-child {
 
 .galeria > :first-child {
     margin: 0;
-    padding: 0vh 0vw 5vh 0vw;
+    padding: 0vh 0vw 2vh 0vw;
     box-sizing: border-box;
     display: flex;
     justify-content: right;
+    border-bottom: var(--color-secundario) solid 10px;
 }
 
 .imggaleria {
-    height: 45vh;
+    height: 53vh;
     width: auto;
     grid-area: 1 / 1;
 }
@@ -636,9 +637,11 @@ footer > :first-child > :last-child > :last-child  > a{
     }
 
 .activis {
-    margin: 5vh 3vw;
-    padding: 5vh 2vw;
+    margin: 5vh 7vw;
+    padding: 3vh 1vw;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
     color: var(--color-secundario);
 }
 
