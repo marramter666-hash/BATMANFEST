@@ -367,22 +367,10 @@ footer > :first-child > :last-child > :last-child {
         font-size: 2rem;
     }
 
-.fondofijo {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background-image: url('../galeria/fondo/FONDO.png'); 
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-}
 
-.fondonegro {
-    position: relative;
-    z-index: 1; 
-}
+
+
+
 
 /* HEADER */
     header {
@@ -456,6 +444,10 @@ footer > :first-child > :last-child > :last-child {
     }
 
 
+
+
+
+
 /* SECCIÓN PATROCINADORES */
     .patrocinadores {
         margin: 0;
@@ -493,15 +485,15 @@ footer > :first-child > :last-child > :last-child {
 
 
 /* GALERIA */
-.galeria {
-    margin: 0;
-    padding: 5vh 5vw 10vh 5vw;
-    box-sizing: border-box;
-}
+    .galeria {
+        margin: 0;
+        padding: 5vh 5vw 10vh 5vw;
+        box-sizing: border-box;
+    }
 
-.actividadono {
-    font-size: 3.5rem;
-}
+    .actividadono {
+        font-size: 3.5rem;
+    }
 
 
 
