@@ -249,9 +249,14 @@ header > div > :last-child {
     width: 8vw;
 }
 
+
+
+
+
+/* SECCIÓN GALERIA */
 .galeria {
     margin: 0;
-    padding: 10vh 5vw 10vh 5vw;
+    padding: 10vh 5vw 20vh 5vw;
     box-sizing: border-box;
     background: linear-gradient(var(--color-tercero),var(--color-principal));
     border-top: solid 7px var(--color-principal);
@@ -272,6 +277,44 @@ header > div > :last-child {
     box-sizing: border-box;
     display: flex;
     justify-content: right;
+}
+
+.imggaleria {
+    height: 45vh;
+    width: auto;
+    grid-area: 1 / 1;
+}
+
+.palabragal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1;
+    color: rgb(242, 229, 0, 0);
+    background-color: rgb(0, 0, 0, 0);
+    transition: 0.8s;
+}
+
+.hoverimg {
+    display: grid;
+    place-items: center;
+    transition: 0.4s;
+}
+
+.hoverimg:hover , .palabragal:hover {
+    margin: 0vh 1vw;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(242, 229, 0, 1);
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: background-color 0.8s;
+}
+
+.galeria > :last-child > nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -467,7 +510,7 @@ footer > :first-child > :last-child > :last-child  > a{
 
     .patrocinadores > :first-child {
         margin: 5vh 5vw 5vh 5vw; 
-        padding: 5vh 1vw;
+        padding: 3vh 1vw;
     }
 
     .patrocinadores > :last-child {
@@ -480,13 +523,13 @@ footer > :first-child > :last-child > :last-child  > a{
     }
 
     .logopatro {
-        height: 20vh;
-        width: 70vw;
+        height: 10vh;
+        width: 60vw;
     }
 
     .imgpatro {
         height: auto;
-        width: 20vw;
+        width: 10vw;
     }
 
 
@@ -540,7 +583,7 @@ footer > :first-child > :last-child > :last-child  > a{
         font-size: 3rem;
     }
 
-    footer > :first-child > :first-child > :first-child > div > li {
+    footer > :first-child > :first-child > :first-child > nav > li {
         margin: 0;
         padding: 2vh 0vw;
         box-sizing: border-box;
