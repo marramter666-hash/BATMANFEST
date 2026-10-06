@@ -296,6 +296,7 @@ header > div > :nth-child(2) {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area: 1 / 1;
@@ -345,6 +346,13 @@ header > div > :nth-child(2) {
     padding: 5vh 2vw;
     box-sizing: border-box;
     color: var(--color-secundario);
+}
+
+.activis > p {
+    font-family: "cc-smash", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.7rem;
 }
 
 
@@ -436,7 +444,7 @@ footer > :first-child > :last-child > :last-child  > a{
     }
 
     a {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 
     p {
@@ -471,6 +479,13 @@ footer > :first-child > :last-child > :last-child  > a{
 /* HEADER */
     header {
         padding: 2vh 3vw 4vh 3vw;
+    }
+
+    header > div > :nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 3vw;
     }
 
     .logo {
@@ -542,13 +557,13 @@ footer > :first-child > :last-child > :last-child  > a{
         box-sizing: border-box;
     }
 
-.patrocinadores > :first-child {
-    margin: 3vh 7vw; 
-    padding: 3vh 0vw;
-    box-sizing: border-box;
-}
+    .patrocinadores > :first-child {
+        margin: 3vh 7vw; 
+        padding: 3vh 0vw;
+        box-sizing: border-box;
+    }
 
-.patrocinadores > :last-child {
+    .patrocinadores > :last-child {
         margin: 3vh 24vw;
         padding: 4vh 5vw;
         box-sizing: border-box;
@@ -572,56 +587,6 @@ footer > :first-child > :last-child > :last-child  > a{
 
 
 /* SECCIÓN GALERIA */
-/* .galeria {
-    margin: 0;
-    padding: 10vh 5vw 10vh 5vw;
-    box-sizing: border-box;
-    background: linear-gradient(var(--color-tercero),var(--color-principal));
-    border-top: solid 7px var(--color-principal);
-    border-bottom: solid 7px var(--color-principal);
-}
-
-.actividadono {
-    color: var(--color-secundario);
-    font-family: "cc-smash", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
-}
-
-.galeria > :first-child {
-    margin: 0;
-    padding: 0vh 0vw 2vh 0vw;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: right;
-    border-bottom: var(--color-secundario) solid 10px;
-}
-
-.imggaleria {
-    height: 53vh;
-    width: auto;
-    grid-area: 1 / 1;
-}
-
-.palabragal {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 1;
-    color: rgb(242, 229, 0, 0);
-    background-color: rgb(0, 0, 0, 0);
-    transition: 0.8s;
-}
-
-.comic {
-    font-family: "cc-smash-open", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .hoverimg {
     display: grid;
     place-items: center;
@@ -643,12 +608,77 @@ footer > :first-child > :last-child > :last-child  > a{
     box-sizing: border-box;
 }
 
-.activis {
-    margin: 5vh 3vw;
-    padding: 5vh 2vw;
-    box-sizing: border-box;
-    color: var(--color-secundario);
-} */
+    .galeria {
+        margin: 0;
+        padding: 5vh 5vw 10vh 5vw;
+        box-sizing: border-box;
+    }
+
+    .actividadono {
+        font-size: 3.5rem;
+    }
+
+    .galeria > :first-child {
+        height: 1vh 0vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imggaleria {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: center; 
+    }
+
+    .palabragal {
+        color: rgb(242, 229, 0, 1);
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    .comic {
+        font-size: 3.5rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hoverimg {
+        width: 100%;
+        max-width: 500px;
+        height: 100px; 
+        border-radius: 8px;
+        overflow: hidden; 
+    } 
+
+    .opciones {
+        display: none;
+    }
+
+    .galeria > :nth-child(2) > nav {
+        margin: 1vh 0vw;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria > :nth-child(2) > nav > li {
+        margin: 2vh 0vw;
+    }
+
+    .activis {
+        margin: 4vh 12vw 0vh 12vw;
+        padding: 3vh 0vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        color: var(--color-secundario);
+    }
 
 
 
@@ -752,7 +782,7 @@ footer > :first-child > :last-child > :last-child  > a{
     }
 
     .onomatopeya {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
 
@@ -918,6 +948,11 @@ footer > :first-child > :last-child > :last-child  > a{
         font-size: 3.5rem;
     }
 
+
+
+
+
+
 /* SECCIÓN GALERIA */
     .galeria {
         margin: 0;
@@ -926,7 +961,7 @@ footer > :first-child > :last-child > :last-child  > a{
     }
 
     .actividadono {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .galeria > :first-child {
@@ -948,7 +983,7 @@ footer > :first-child > :last-child > :last-child  > a{
     }
 
     .comic {
-        font-size: 3.5rem;
+        font-size: 2.7rem;
         width: 100%;
         height: 100%;
         object-fit: cover; 
@@ -989,6 +1024,13 @@ footer > :first-child > :last-child > :last-child  > a{
         display: flex;
         justify-content: center;
         color: var(--color-secundario);
+    }
+
+    .activis > p {
+        font-family: "cc-smash", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
     }
 
 
