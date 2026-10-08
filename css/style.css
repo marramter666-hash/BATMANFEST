@@ -64,9 +64,9 @@ main > div {
 }
 
 .pfooter {
-    /* color: var(--color-tercero);
-    font-size: var(--size-onomatopeyas);
-    font-family: var(--font-principal); */
+    color: var(--color-tercero);
+    font-size: var(--size-informacion);
+    font-family: var(--font-principal);
 }
 
 h1 {
@@ -91,7 +91,6 @@ span {
     font-weight: var(--font-peso);
     font-size: var(--size-onomatopeyas);
 }
-.botonesB {}
 
 /* GENERAL */
 img {
@@ -102,6 +101,7 @@ img {
 a {
     text-decoration: none;
     display: inline-block;
+    color: var(--color-tercero);
 }
 
 li {
@@ -250,6 +250,7 @@ header > div {
     border: solid 7px var(--color-principal);
     background-color: var(--color-principal);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.7);
+    color: var(--color-secundario);
 }
 
 
@@ -424,6 +425,13 @@ header > div {
     width: 4vw;
 }
 
+footer > :last-child {
+    margin: 0vh 5vw 0vh 5vw;
+    padding: 3vh 0vw;
+    box-sizing: border-box;
+    border-top: var(--color-tercero) solid 7px;
+}
+
 .entradafooter {
     transform: skewX(-20deg);
 }
@@ -434,9 +442,9 @@ header > div {
 
 footer {
     margin: 0;
-    padding: 5vh 3vw 5vh 3vw;
+    padding: 0vh 5vw;
     box-sizing: border-box;
-    background-color: var(--color-principal);
+    background-color: var(--color-secundario);
 }
 
 footer > :first-child {
@@ -450,40 +458,42 @@ footer > :first-child {
 
 footer > :first-child > :first-child > :first-child > li {
     margin: 0;
-    padding: 2vh 0vw 5vh 0vw;
+    padding: 2vh 0vw 4vh 0vw;
     box-sizing: border-box;
 }
 
 footer > :first-child > :first-child > :last-child {
     margin: 0;
-    padding: 5vh 0vw 5vh 0vw;
+    padding: 3vh 0vw 2vh 0vw;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
 }
 
 footer > :first-child > :last-child {
     margin: 0;
-    padding: 5vh 0vw;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
 }
 
 footer > :first-child > :last-child > nav {
     margin: 0;
-    padding: 3vh 0vw;
+    padding: 2vh 0vw;
 }
 
 footer > :first-child > :last-child > :last-child {
     display: flex;
-    justify-content: space-between;
-    gap: 1.1vw;
+    justify-content: right;
+    gap: 1vw;
 }
 
 footer > :first-child > :last-child > :last-child  > a{
-   font-size: 2.5rem;
+   font-size: 1.5rem;
 }
 
 
