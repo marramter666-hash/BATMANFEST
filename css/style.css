@@ -45,13 +45,55 @@
 }
 
 main > div {
+    margin: 0vh 0vw;
     background: linear-gradient(var(--color-principal),var(--color-tercero), var(--color-principal));
 }
 
 /* SECCIÓN TIPOGRAFÍA */
-/* GENERAL */
-/* HOVER */
+.aheader {
+    color: var(--color-tercero);
+    font-size: var(--size-bontones);
+    font-family: var(--font-principal);
+}
 
+.afooter {
+    color: var(--color-tercero);
+    font-size: var(--size-onomatopeyas);
+    font-family: var(--font-principal);
+    padding: 2vh 0vw;
+}
+
+.pfooter {
+    /* color: var(--color-tercero);
+    font-size: var(--size-onomatopeyas);
+    font-family: var(--font-principal); */
+}
+
+h1 {
+    font-family: var(--font-onomatopeya);
+    font-weight: var(--font-peso);
+    font-size: var(--size-títulos);
+}
+
+.pinfo {
+    font-size: var(--size-párrafos);
+    font-family: var(--font-parrafo);
+    font-weight: var(--font-peso);
+}
+
+span {
+    font-size: var(--size-párrafos);
+    font-family: var(--font-parrafo);
+    font-weight: 900;
+}
+.botonesA {
+    font-family: var(--font-onomatopeya);
+    font-weight: var(--font-peso);
+    font-size: var(--size-onomatopeyas);
+}
+.botonesB {}
+
+/* GENERAL */
 img {
     height: 30vh;
     width: auto;
@@ -59,35 +101,19 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--color-tercero);
-    font-size: var(--size-bontones);
-    font-family: var(--font-principal);
     display: inline-block;
-}
-
-a:hover {
-    transform: scale(1.2);
-}
-
-p {
-    font-size: var(--size-párrafos);
-    font-family: "classic-comic", sans-serif;
-}
-
-/* .black {
-    font-family: "classic-comic", sans-serif;
-} */
-
-.onomatopeya {
-    font-family: "cc-smash", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
 }
 
 li {
   list-style: none;
 }
+
+/* HOVER */
+a:hover {
+    transform: scale(1.2);
+}
+
+
 
 
 
@@ -130,6 +156,7 @@ header > div {
 }
 
 .logo {
+    padding: 0vh 10vw 0vh 0vw;
     height: 5vh;
     width: auto;
 }
@@ -171,7 +198,7 @@ header > div {
     margin: 0;
     padding: 10vh 10vw;
     box-sizing: border-box;
-    background-image: radial-gradient(rgba(17, 17, 17, 1) 1.5px, transparent 1.5px);
+    background-image: radial-gradient(var(--color-principal) 1.5px, transparent 1.5px);
     background-size: 22px 22px;
     border-left: solid 7px var(--color-principal);
     border-right: solid 7px var(--color-principal);
@@ -179,7 +206,7 @@ header > div {
 
 .informacion > :first-child > :first-child {
     margin: 0vh 30vw 0vh 20vw;
-    padding: 3vh 1vw;
+    padding: 4.25vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-secundario);
@@ -188,15 +215,18 @@ header > div {
 }
 
 .informacion > :first-child > :last-child {
-    margin: 2vh 20vw 5vh 45vw;
-    padding: 3vh 1vw;
+    margin: 2vh 20vw 5vh 35vw;
+    padding: 4.25vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .informacion > :nth-child(2) {
-    margin: 10vh 2vw 5vh 2vw;
+    margin: 5vh 2vw 5vh 2vw;
     padding: 5vh 3vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
@@ -206,8 +236,8 @@ header > div {
 }
 
 .informacion > :last-child {
-    margin: 10vh 0vw 5vh 0vw;
-    padding: 5vh 5vw;
+    margin: 0;
+    padding: 10vh 0vw 0vh 0vw;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -219,7 +249,6 @@ header > div {
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-principal);
-    font-size: var(--size-onomatopeyas);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.7);
 }
 
@@ -232,7 +261,8 @@ header > div {
     margin: 0;
     padding: 10vh 10vw;
     box-sizing: border-box;
-    background: linear-gradient(var(--color-tercero),var(--color-principal));;
+    background-image: radial-gradient(var(--color-principal) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
     border-left: solid 7px var(--color-principal);
     border-right: solid 7px var(--color-principal);
 }
@@ -284,20 +314,21 @@ header > div {
 /* SECCIÓN GALERIA */
 .galeria {
     margin: 0;
-    padding: 10vh 10vw;
+    padding: 3vh 10vw;
     box-sizing: border-box;
-    background: var(--color-tercero);
+    background-image: radial-gradient(var(--color-principal) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
     border-left: solid 7px var(--color-principal);
     border-right: solid 7px var(--color-principal);
 }
 
-.actividadono {
+/* .actividadono {
     color: var(--color-secundario);
     font-family: "cc-smash", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 5rem;
-}
+} */
 
 .galeria > :first-child {
     margin: 0;
