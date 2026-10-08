@@ -260,7 +260,7 @@ header > div {
 /* SECCIÓN PATROCINADORES */
 .patrocinadores {
     margin: 0;
-    padding: 10vh 10vw;
+    padding: 10vh 10vw 20vh 10vw;
     box-sizing: border-box;
     background-image: radial-gradient(var(--color-principal) 1.5px, transparent 1.5px);
     background-size: 22px 22px;
@@ -276,7 +276,9 @@ header > div {
     background-color: var(--color-tercero);
     display: flex;
     justify-content: center;
-    transform: skewX(-20deg); 
+    transform: skewX(-20deg);
+    color: var(--color-secundario);
+
 }
 
 .patrocinadores > :last-child {
@@ -323,14 +325,6 @@ header > div {
     border-right: solid 7px var(--color-principal);
 }
 
-/* .actividadono {
-    color: var(--color-secundario);
-    font-family: "cc-smash", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
-} */
-
 .galeria > :first-child {
     margin: 5vh 2vw 5vh 50vw; 
     padding: 5vh 1vw;
@@ -340,6 +334,7 @@ header > div {
     display: flex;
     justify-content: center;
     transform: skewX(-20deg);
+    color: var(--color-secundario);
 }
 
 .imggaleria {
@@ -362,9 +357,9 @@ header > div {
 }
 
 .comic {
-    font-family: "cc-smash-open", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--font-botones);
+    font-weight: var(--font-peso);
+    font-size: var(--size-onomatopeyas);
 }
 
 .hoverimg {
@@ -405,6 +400,58 @@ header > div {
 }
 
 
+
+
+
+
+/* SECCION PARA ENTRADAS */
+/* SECCION CABECERA */
+.cabecera {
+    margin: 0;
+    padding:20vh 10vw 3vh 10vw;
+    box-sizing: border-box;
+    background-image: radial-gradient(var(--color-principal) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+    border-left: solid 7px var(--color-principal);
+    border-right: solid 7px var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6vw;
+}
+
+.principalimgB {
+    height: 50vh;
+    width: auto;
+}
+
+/* SECCION COMPRA */
+.compra {
+    margin: 0;
+    padding: 10vh 10vw 20vh 10vw;
+    box-sizing: border-box;
+    background-image: radial-gradient(var(--color-principal) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+    border-left: solid 7px var(--color-principal);
+    border-right: solid 7px var(--color-principal);
+}
+
+.compra > :first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 6vw;
+}
+
+.resumen {
+    margin: 0;
+    padding: 10hv 5vw;
+    position: sticky; 
+    top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: aqua;
+}
 
 
 
