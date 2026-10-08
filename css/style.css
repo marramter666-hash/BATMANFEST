@@ -2,6 +2,21 @@
     --color-principal: #000000;
     --color-secundario: #F2E500;
     --color-tercero: #3B4970;
+
+
+    --font-principal: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-parrafo:"classic-comic", sans-serif;
+    --font-onomatopeya: "cc-smash", sans-serif;
+    --font-botones: "cc-smash-open", sans-serif;
+
+    --font-peso: 400;
+
+    --size-bontones: 1rem;
+    --size-onomatopeyas: 1.25rem;
+    --size-títulos: 2.5rem;
+    --size-párrafos: 1.125rem;
+    --size-informacion: 1rem;
+    --size-grandep: 1.25;
 }
 
 * {
@@ -11,6 +26,32 @@
 }
 
 /* FUNCIONES GENERALES */
+/* FONDOS */
+.fondofijo {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-image: url('../galeria/fondo/FONDO.png'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.fondonegro {
+    position: relative;
+    z-index: 1; 
+}
+
+main > div {
+    background: linear-gradient(var(--color-principal),var(--color-tercero), var(--color-principal));
+}
+
+/* SECCIÓN TIPOGRAFÍA */
+/* GENERAL */
+/* HOVER */
+
 img {
     height: 30vh;
     width: auto;
@@ -18,9 +59,9 @@ img {
 
 a {
     text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--color-tercero);
-    font-size: 2rem;
+    font-size: var(--size-bontones);
+    font-family: var(--font-principal);
     display: inline-block;
 }
 
@@ -29,7 +70,7 @@ a:hover {
 }
 
 p {
-    font-size: 1.7rem;
+    font-size: var(--size-párrafos);
     font-family: "classic-comic", sans-serif;
 }
 
@@ -48,22 +89,7 @@ li {
   list-style: none;
 }
 
-.fondofijo {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background-image: url('../galeria/fondo/FONDO.png'); 
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-}
 
-.fondonegro {
-    position: relative;
-    z-index: 1; 
-}
 
 
 
@@ -78,13 +104,12 @@ li {
 
 header {
     margin: 0;
-    padding: 2vh 3vw 8vh 3vw;
+    padding: 2vh 10vw;
     box-sizing: border-box;
     background-color: var(--color-secundario);
     position: fixed;
     top: 0;
     left: 0;
-    height: 10vh;
     width: 100vw;
     border-bottom: solid 7px #000000;
     z-index: 100; 
@@ -96,22 +121,16 @@ header > div {
     align-items: center;
 }
 
-header > div > :nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 6vw;
-}
-
 .botonheader {
+    
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 1.2vw;
+    gap: 1.25vw;
 }
 
 .logo {
-    height: 6vh;
+    height: 5vh;
     width: auto;
 }
 
@@ -122,18 +141,17 @@ header > div > :nth-child(2) {
 
 /* SECCIÓN IMGÁGEN */
 .principal {
-    margin: 15vh 5vw 0vh 5vw;
+    margin: 20vh 5vw 5vh 5vw;
     padding: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    height: 90vh;
-    color: black;
+    height: 80vh;
     background: transparent;
 }
 
 .principalimg {
-    height: 90vh;
+    height: 80vh;
     width: auto;
     transition: 0.4s;
 }
@@ -151,11 +169,12 @@ header > div > :nth-child(2) {
 /* SECCIÓN INFORMACIÓN */
 .informacion {
     margin: 0;
-    padding: 10vh 5vw 10vh 5vw;
+    padding: 10vh 10vw;
     box-sizing: border-box;
-    background: linear-gradient(var(--color-principal),var(--color-tercero));
-    border-top: solid 7px var(--color-principal);
-    border-bottom: solid 7px var(--color-principal);
+    background-image: radial-gradient(rgba(17, 17, 17, 1) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+    border-left: solid 7px var(--color-principal);
+    border-right: solid 7px var(--color-principal);
 }
 
 .informacion > :first-child > :first-child {
@@ -200,7 +219,7 @@ header > div > :nth-child(2) {
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-principal);
-    font-size: 3rem;
+    font-size: var(--size-onomatopeyas);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.7);
 }
 
@@ -211,8 +230,11 @@ header > div > :nth-child(2) {
 /* SECCIÓN PATROCINADORES */
 .patrocinadores {
     margin: 0;
-    padding: 10vh 3vw 10vh 3vw;
+    padding: 10vh 10vw;
     box-sizing: border-box;
+    background: linear-gradient(var(--color-tercero),var(--color-principal));;
+    border-left: solid 7px var(--color-principal);
+    border-right: solid 7px var(--color-principal);
 }
 
 .patrocinadores > :first-child {
@@ -262,11 +284,11 @@ header > div > :nth-child(2) {
 /* SECCIÓN GALERIA */
 .galeria {
     margin: 0;
-    padding: 10vh 5vw 10vh 5vw;
+    padding: 10vh 10vw;
     box-sizing: border-box;
-    background: linear-gradient(var(--color-tercero),var(--color-principal));
-    border-top: solid 7px var(--color-principal);
-    border-bottom: solid 7px var(--color-principal);
+    background: var(--color-tercero);
+    border-left: solid 7px var(--color-principal);
+    border-right: solid 7px var(--color-principal);
 }
 
 .actividadono {
@@ -383,7 +405,7 @@ footer {
     margin: 0;
     padding: 5vh 3vw 5vh 3vw;
     box-sizing: border-box;
-    background-color: var(--color-secundario);
+    background-color: var(--color-principal);
 }
 
 footer > :first-child {
@@ -837,7 +859,7 @@ footer > :first-child > :last-child > :last-child  > a{
         margin: 20px 0;
     }
 
-    .hamburguesa.show {
+    .batido.show {
         right: 0;
     }
 
@@ -1099,7 +1121,3 @@ footer > :first-child > :last-child > :last-child  > a{
        font-size: 3rem;
     }
 }
-
-
-
-
