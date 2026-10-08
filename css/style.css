@@ -94,7 +94,7 @@ span {
 
 /* GENERAL */
 img {
-    height: 30vh;
+    height: 15vh;
     width: auto;
 }
 
@@ -442,7 +442,7 @@ footer > :last-child {
 
 footer {
     margin: 0;
-    padding: 0vh 5vw;
+    padding: 2vh 5vw 0vh 5vw;
     box-sizing: border-box;
     background-color: var(--color-secundario);
 }
@@ -462,6 +462,12 @@ footer > :first-child > :first-child > :first-child > li {
     box-sizing: border-box;
 }
 
+footer > :first-child > :first-child > :first-child > nav {
+    display: flex;
+    justify-content: left;
+    gap: 2vw;
+}
+
 footer > :first-child > :first-child > :last-child {
     margin: 0;
     padding: 3vh 0vw 2vh 0vw;
@@ -478,7 +484,7 @@ footer > :first-child > :last-child {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: center;
 }
 
 footer > :first-child > :last-child > nav {

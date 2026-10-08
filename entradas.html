@@ -22,7 +22,7 @@
     <!-- <div class="fondofijo"></div> -->
     <script src="JS/app.js" defer></script>
 
-    <main>
+    <main class="fondonegro pagina">
         <header>
             <div>
                 <div>
@@ -37,21 +37,23 @@
                 <div class="batido">
                     <nav class="botonheader">
                         <li>
-                            <a href="#">ACTIVIDADES</a>
+                            <a class="aheader" href="#">ACTIVIDADES</a>
                         </li>
                         <li>
-                            <a href="entradas.html">ENTRADAS</a>
+                            <a class="aheader" href="entradas.html">ENTRADAS</a>
                         </li>
                     </nav>
+                </div>
+                <div class="batido">
                     <nav class="botonheader">
                         <li>
-                            <a href="index.html">INICIO</a>
+                            <a class="aheader" href="index.html">INICIO</a>
                         </li>
                         <li>
-                            <a href="#">INFORMACIÓN</a>
+                            <a class="aheader" href="#">INFORMACIÓN</a>
                         </li>
                         <li>
-                            <a href="#">CONTACTO</a>
+                            <a class="aheader" href="#">CONTACTO</a>
                         </li>
                     </nav>
                 </div>
@@ -61,21 +63,231 @@
             </div>
         </header>
 
-        <section></section>
+        <div>
+            <section class="cabecera">
+                <span class="etiqueta">12 · 13 · 14 junio 2027 · Madrid</span>
+                <h1 class="cabecera__titulo">
+                    Miau
+                    <img src="https://cataas.com/cat?width=128;height=64" alt="" />
+                    <span>Fest</span>
+                </h1>
+                <p class="cabecera__texto">
+                    El festival felino del año: conciertos, mercadillo, zona de adopción y muchos
+                    ronroneos.
+                </p>
+                <div class="pegatina" aria-hidden="true">¡Miau!</div>
+            </section>
+
+            <!-- ============ COMPONENTE DE COMPRA ============ -->
+            <form class="compra" id="formulario-compra" novalidate>
+                <div class="compra__principal">
+                    <!-- ---------- 1. Tipos de entrada ---------- -->
+                    <fieldset class="bloque">
+                        <legend class="bloque__titulo"><span>1</span> Elige tus entradas</legend>
+
+                        <!-- Cada entrada guarda su precio en el atributo data-precio.
+                            El JavaScript lo lee para hacer los cálculos. -->
+                        <article
+                            class="entrada entrada--amarilla"
+                            data-precio="25"
+                            data-nombre="Entrada de día">
+                            <div class="entrada__info">
+                                <h2 class="entrada__nombre">Entrada de día</h2>
+                                <p class="entrada__descripcion">
+                                    Un día a elegir: conciertos, mercadillo y zona de adopción.
+                                </p>
+                                <p class="entrada__precio">25,00 €</p>
+                            </div>
+                            <div class="entrada__controles">
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--menos"
+                                    aria-label="Quitar una entrada de día">
+                                    −
+                                </button>
+                                <span class="contador__cantidad" aria-live="polite">0</span>
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--mas"
+                                    aria-label="Añadir una entrada de día">
+                                    +
+                                </button>
+                            </div>
+                            <p class="entrada__subtotal">Subtotal: <strong>0,00 €</strong></p>
+                        </article>
+
+                        <article
+                            class="entrada entrada--azul"
+                            data-precio="60"
+                            data-nombre="Abono 3 días">
+                            <div class="entrada__info">
+                                <h2 class="entrada__nombre">Abono 3 días</h2>
+                                <p class="entrada__descripcion">
+                                    Los tres días del festival, con acceso a todos los escenarios.
+                                </p>
+                                <p class="entrada__precio">60,00 €</p>
+                            </div>
+                            <div class="entrada__controles">
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--menos"
+                                    aria-label="Quitar un abono de 3 días">
+                                    −
+                                </button>
+                                <span class="contador__cantidad" aria-live="polite">0</span>
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--mas"
+                                    aria-label="Añadir un abono de 3 días">
+                                    +
+                                </button>
+                            </div>
+                            <p class="entrada__subtotal">Subtotal: <strong>0,00 €</strong></p>
+                        </article>
+
+                        <article
+                            class="entrada entrada--rosa"
+                            data-precio="110"
+                            data-nombre="VIP Ronroneo">
+                            <span class="entrada__destacado">Top ventas</span>
+                            <div class="entrada__info">
+                                <h2 class="entrada__nombre">VIP Ronroneo</h2>
+                                <p class="entrada__descripcion">
+                                    Abono 3 días + zona lounge con gatos de terapia y merch
+                                    exclusivo.
+                                </p>
+                                <p class="entrada__precio">110,00 €</p>
+                            </div>
+                            <div class="entrada__controles">
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--menos"
+                                    aria-label="Quitar una entrada VIP Ronroneo">
+                                    −
+                                </button>
+                                <span class="contador__cantidad" aria-live="polite">0</span>
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--mas"
+                                    aria-label="Añadir una entrada VIP Ronroneo">
+                                    +
+                                </button>
+                            </div>
+                            <p class="entrada__subtotal">Subtotal: <strong>0,00 €</strong></p>
+                        </article>
+
+                        <article
+                            class="entrada entrada--verde"
+                            data-precio="8"
+                            data-nombre="Gatito (menores de 12)">
+                            <div class="entrada__info">
+                                <h2 class="entrada__nombre">
+                                    Gatito <small>(menores de 12)</small>
+                                </h2>
+                                <p class="entrada__descripcion">
+                                    Un día a elegir, siempre acompañado de un adulto.
+                                </p>
+                                <p class="entrada__precio">8,00 €</p>
+                            </div>
+                            <div class="entrada__controles">
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--menos"
+                                    aria-label="Quitar una entrada infantil">
+                                    −
+                                </button>
+                                <span class="contador__cantidad" aria-live="polite">0</span>
+                                <button
+                                    type="button"
+                                    class="contador__boton contador__boton--mas"
+                                    aria-label="Añadir una entrada infantil">
+                                    +
+                                </button>
+                            </div>
+                            <p class="entrada__subtotal">Subtotal: <strong>0,00 €</strong></p>
+                        </article>
+
+                        <p class="bloque__nota">Máximo 10 entradas de cada tipo por compra.</p>
+                    </fieldset>
+
+                    <!-- ---------- 2. Datos de la compra ---------- -->
+                    <fieldset class="bloque">
+                        <legend class="bloque__titulo"><span>2</span> Tus datos</legend>
+
+                        <div class="campos">
+                            <div class="campo">
+                                <label for="nombre">Nombre y apellidos</label>
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    placeholder="Ej. Pepita Bigotes"
+                                    autocomplete="name" />
+                            </div>
+                            <div class="campo">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="tu@email.com"
+                                    autocomplete="email" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- ---------- 3. Resumen y total ---------- -->
+                <aside class="resumen" aria-labelledby="resumen-titulo">
+                    <h2 class="resumen__titulo" id="resumen-titulo"><span>3</span> Resumen</h2>
+
+                    <!-- El JavaScript rellena esta lista con las entradas elegidas -->
+                    <ul class="resumen__lista" id="resumen-lista">
+                        <li class="resumen__vacio">Todavía no has elegido ninguna entrada.</li>
+                    </ul>
+
+                    <dl class="resumen__cuentas">
+                        <div class="resumen__fila">
+                            <dt>Entradas</dt>
+                            <dd id="total-entradas">0</dd>
+                        </div>
+                        <div class="resumen__fila">
+                            <dt>Subtotal</dt>
+                            <dd id="subtotal">0,00 €</dd>
+                        </div>
+                        <div class="resumen__fila">
+                            <dt>Gastos de gestión <small>(1,50 € por entrada)</small></dt>
+                            <dd id="gastos">0,00 €</dd>
+                        </div>
+                        <div class="resumen__fila resumen__fila--total">
+                            <dt>Total</dt>
+                            <dd id="total">0,00 €</dd>
+                        </div>
+                    </dl>
+
+                    <button type="submit" class="boton boton--rosa" id="boton-comprar" disabled>
+                        Comprar entradas
+                    </button>
+
+                    <!-- Aquí aparecen los avisos de error o de compra realizada -->
+                    <p class="mensaje" id="mensaje" role="status" aria-live="polite"></p>
+                </aside>
+            </form>
+        </div>
 
         <footer>
             <div>
                 <div>
                     <nav>
                         <li>
-                            <a class="onomatopeya entradaono entradafooter" href="">ENTRADAS</a>
+                            <a class=" botonesA entradaono entradafooter" href="entradas.html">ENTRADAS</a>
                         </li>
                         <nav>
                             <li>
-                                <a href="">CONTACTO</a>
+                                <a class="afooter" href="#">CONTACTO</a>
                             </li>
                             <li>
-                                <a href="">ACTIVIDADES</a>
+                                <a class="afooter" href="#">ACTIVIDADES</a>
                             </li>
                         </nav>
                     </nav>
@@ -105,28 +317,28 @@
                 </div>
                 <div>
                     <nav>
-                        <a href="http://127.0.0.1:5500/">
+                        <a href="index.html">
                             <img src="galeria/header/BATMANLOGO.png" alt="BATMANLOGO">
                         </a>
                     </nav>
                     <nav>
-                        <a href="">
+                        <a href="#">
                             <i class="fa-brands fa-discord"></i>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <i class="fa-brands fa-youtube"></i>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </nav>
                 </div>
             </div>
             <div>
-                <p>©Derechos de imágen y fotografía al cread@r/aut@r correspondiente.</p>
+                <p class="pfooter">©2026 Derechos de imágen y fotografía al cread@r/aut@r correspondiente.</p>
             </div>
         </footer>
     </main>
