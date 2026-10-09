@@ -133,6 +133,46 @@ a:hover {
 
 
 
+.bienvenida {
+    border: none;
+    border-radius: var(--radio-borde);
+    padding: 5vh 3vw;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+}
+
+.modal-contenido > div {
+    padding: 3vh 0vw;
+}
+
+.boton-modal {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton-modal:hover {
+    transform: scale(1.2);
+}
+
+modalBienvenida::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(100px);
+}
 
 /* HEADER */
 /* BOTÓN HAMBURGUESA */
