@@ -301,7 +301,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3vw;
+    gap: 6vw;
 }
 
 .logopatro {
@@ -450,7 +450,7 @@ header > div {
     background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
-    transform: rotate(5deg);
+    transform: rotate(5deg) !important;
 }
 
 .cabecera > :last-child > :nth-child(2) {
@@ -500,7 +500,7 @@ header > div {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    gap: 3vw;
+    gap: 1vw;
 }
 
 .bloque > div {
@@ -569,11 +569,53 @@ article {
 
 .resumen {
     margin: 0; 
-    padding: 5vh 1vw;
+    padding: 3vh 4vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-tercero);
     color: var(--color-secundario);
+}
+
+.datos > div {
+    margin: 0; 
+    padding: 2vh 0vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.datos > :last-child > :first-child {
+    margin: 0vh 40vw 2vh 5vw;
+    padding: 2.25vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.datos > :last-child > :last-child {
+    margin: 0vh 30vw 2vh 20vw;
+    padding: 2.25vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+input {
+    margin: 0; 
+    padding: 1vh 1.5vw;
+    box-sizing: border-box;
+    background: var(--color-tercero);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color var(--color-tercero) ease;
 }
 
 

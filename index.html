@@ -21,6 +21,7 @@
 <body>
     <div class="fondofijo"></div>
     <script src="JS/app.js" defer></script>
+    <script src="JS/ventana.js" defer></script>
     <script src="https://michalsnik.github.io/aos/"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -172,7 +173,13 @@
                 <div>
                     <div data-aos="fade-up"
                      data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
-                        <img class="imgpatro" src="galeria/plano/plano_oeste-m40.png" alt="plano">
+                        <li>
+                            <a href="https://www.ifema.es/fitur/como-llegar">
+                                <div>
+                                    <img class="imgpatro" src="galeria/plano/plano_oeste-m40.png" alt="plano">
+                                </div>
+                            </a>
+                        </li>
                     </div>
                     <div class="logopatro" data-aos="fade-up"
                      data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
@@ -214,21 +221,21 @@
                     </nav>
                     <nav>
                         <li>
-                            <a href="">
+                            <a href="https://www.panini.es/shp_esp_es/">
                                 <div>
                                     <img class="imgfooter" src="galeria/patrocinadores/panini.png" alt="#">
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.fnac.es/">
                                 <div>
                                     <img class="footerimg" src="galeria/patrocinadores/fnac.png" alt="#">
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.warnerbros.es/">
                                 <div>
                                     <img class="footerimg" src="galeria/patrocinadores/WB.png" alt="#">
                                 </div>
@@ -263,5 +270,18 @@
             </div>
         </footer>
     </main>
+
+    <dialog id="modalBienvenida">
+        <div class="modal-contenido">
+            <div>
+                <h2>BIENVENID@</h2>
+                <p class="infop" >VEN CON NOSOTROS A SER PARTE DE LA BATFAMILIA</p>
+            </div>
+            <div>
+                <img src="galeria/header/BATMANLOGO.png" alt="#">
+            </div>
+            <button id="btnCerrarBienvenida" class="boton-modal">ENTRAR</button>
+        </div>
+    </dialog>
 </body>
 </html>
