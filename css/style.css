@@ -526,21 +526,21 @@ header > div {
 /* SECCION COMPRA */
 .compra {
     margin: 0;
-    padding: 10vh 10vw 20vh 10vw;
+    padding: 10vh 5vw 20vh 5vw;
     box-sizing: border-box;
     background-image: radial-gradient(var(--color-principal) 1.5px, transparent 1.5px);
     background-size: 22px 22px;
     border-left: solid 7px var(--color-principal);
     border-right: solid 7px var(--color-principal);
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .compra > :first-child {
     margin: 0;
-    padding: 0vh 0vw 10vh 0vw;
+    padding: 0vh 5vw 10vh 0vw;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    gap: 1vw;
 }
 
 .bloque > div {
@@ -567,6 +567,7 @@ article {
     display: flex;
     justify-content: space-between;
     gap: 2vw;
+    
 }
 
 .entrada > div > div {
@@ -607,15 +608,36 @@ article {
     color: var(--color-secundario);
 }
 
+
+
+
+/* SECCION RESUMEN */
 .resumen {
-    margin: 0; 
-    padding: 3vh 4vw;
+    flex: 0 0 420px;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-tercero);
     color: var(--color-secundario);
+    position: sticky;
 }
 
+.resumen__fila {
+    margin: 0; 
+    padding: 1vh 0vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* SECCION DATOS */
 .datos > div {
     margin: 0; 
     padding: 2vh 0vw;
@@ -626,7 +648,7 @@ article {
 }
 
 .datos > :last-child > :first-child {
-    margin: 0vh 40vw 2vh 5vw;
+    margin: 0vh 20vw 2vh 5vw;
     padding: 2.25vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
@@ -637,7 +659,7 @@ article {
 }
 
 .datos > :last-child > :last-child {
-    margin: 0vh 30vw 2vh 20vw;
+    margin: 0vh 10vw 2vh 20vw;
     padding: 2.25vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
@@ -759,11 +781,11 @@ footer > :first-child > :last-child > :last-child  > a{
 @media screen and (max-width:1024px) {
 /* FUNCIONES GENERALES */
     img {
-        height: 10vh;
+        height: 7vh;
         width: auto;
     }
 
-    a {
+    /* a {
         font-size: 1.7rem;
     }
 
@@ -773,7 +795,7 @@ footer > :first-child > :last-child > :last-child  > a{
 
     .onomatopeya {
         font-size: 2.5rem;
-    }
+    } */
 
 /* .fondofijo {
     position: fixed;

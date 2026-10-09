@@ -47,7 +47,7 @@
                 <div class="batido">
                     <nav class="botonheader">
                         <li>
-                            <a class="aheader" href="#">ACTIVIDADES</a>
+                            <a class="aheader" href="index.html#actividades">ACTIVIDADES</a>
                         </li>
                         <li>
                             <a class="aheader" href="entradas.html">ENTRADAS</a>
@@ -160,13 +160,13 @@
                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                                 <div class="entrada__info">
                                     <div>
-                                        <h2 class="entrada__nombre">ENTRADA INDIVIDUAL</h2>
+                                        <h2 class="entrada__nombre">ENTRADA INDIVIDUAL OFERTA</h2>
                                         <p class="entrada__descripcion infop">
                                             ACCESO AL RECINTO Y REGALO ESPECIAL DE EVENTO.
                                         </p>
                                     </div>
                                     <div>
-                                        <p class="entrada__precio pinfo">5,00 €</p>
+                                        <p class="entrada__precio pinfo">10,00 €</p>
                                     </div>
                                 </div>
                                 <div>
@@ -201,13 +201,13 @@
                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                                 <div class="entrada__info">
                                     <div>
-                                        <h2 class="entrada__nombre">ENTRADA INDIVIDUAL</h2>
+                                        <h2 class="entrada__nombre">ENTRADA CONCURSANTE</h2>
                                         <p class="entrada__descripcion infop">
                                             ACCESO AL RECINTO Y REGALO ESPECIAL DE EVENTO.
                                         </p>
                                     </div>
                                     <div>
-                                        <p class="entrada__precio pinfo">5,00 €</p>
+                                        <p class="entrada__precio pinfo">7,00 €</p>
                                     </div>
                                 </div>
                                 <div>
@@ -242,13 +242,13 @@
                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                                 <div class="entrada__info">
                                     <div>
-                                        <h2 class="entrada__nombre">ENTRADA INDIVIDUAL</h2>
+                                        <h2 class="entrada__nombre">ENTRADA VIP</h2>
                                         <p class="entrada__descripcion infop">
                                             ACCESO AL RECINTO Y REGALO ESPECIAL DE EVENTO.
                                         </p>
                                     </div>
                                     <div>
-                                        <p class="entrada__precio pinfo">5,00 €</p>
+                                        <p class="entrada__precio pinfo">20,00 €</p>
                                     </div>
                                 </div>
                                 <div>
@@ -276,8 +276,43 @@
                             </article>
                         </div>
                     </div>
+                    
+                    <div>
+                        <!-- ---------- 2. Datos de la compra ---------- -->
+                        <div class="bloque datos">
+                            <div data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
+                                <h1 class="bloque__titulo">TUS DATOS</h1>
+                            </div>
 
-                    <!-- ---------- 3. Resumen y total ---------- -->
+                            <div class="campos">
+                                <div data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="campo">
+                                    <h2 for="nombre">Nombre y apellidos</h2>
+                                    <input
+                                        type="text"
+                                        id="nombre"
+                                        name="nombre"
+                                        placeholder="Ej. Bruce Wayne"
+                                        autocomplete="name" />
+                                </div>
+                                <div data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="campo">
+                                    <h2 for="email">Email</h2>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="batman@gmail.com"
+                                        autocomplete="email" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---------- 3. Resumen y total ---------- -->
+                <div>
                     <aside data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="resumen" aria-labelledby="resumen-titulo">
                         <div>
@@ -285,69 +320,43 @@
 
                             <!-- El JavaScript rellena esta lista con las entradas elegidas -->
                             <ul class="resumen__lista" id="resumen-lista">
-                                <li class="resumen__vacio">Todavía no has elegido ninguna entrada.</li>
+                                <li class="resumen__vacio"> <p class="infop">Todavía no has elegido ninguna entrada.</p></li>
                             </ul>
                         </div>
 
-                        <dl class="resumen__cuentas">
-                            <div class="resumen__fila">
-                                <dt>Entradas</dt>
-                                <dd id="total-entradas">0</dd>
-                            </div>
-                            <div class="resumen__fila">
-                                <dt>Subtotal</dt>
-                                <dd id="subtotal">0,00 €</dd>
-                            </div>
-                            <div class="resumen__fila">
-                                <dt>Gastos de gestión <small>(1,50 € por entrada)</small></dt>
-                                <dd id="gastos">0,00 €</dd>
-                            </div>
-                            <div class="resumen__fila resumen__fila--total">
-                                <dt>Total</dt>
-                                <dd id="total">0,00 €</dd>
-                            </div>
-                        </dl>
+                        <div>
+                            <dl class="resumen__cuentas">
+                                <div class="infop resumen__fila">
+                                    <dt>Entradas</dt>
+                                    <dd id="total-entradas">0</dd>
+                                </div>
+                                <div class="infop resumen__fila">
+                                    <dt>Subtotal</dt>
+                                    <dd id="subtotal">0,00 €</dd>
+                                </div>
+                                <div class="infop resumen__fila">
+                                    <dt>Gastos de gestión <small>(1,50 € por entrada)</small></dt>
+                                    <dd id="gastos">0,00 €</dd>
+                                </div>
+                                <div class="infop resumen__fila resumen__fila--total">
+                                    <dt>Total</dt>
+                                    <dd id="total">0,00 €</dd>
+                                </div>
+                            </dl>
+                        </div>
 
-                        <button type="submit" class="boton boton--rosa" id="boton-comprar" disabled>
-                            Comprar entradas
-                        </button>
+                        <div>
+                            <button type="submit" class="boton boton--rosa" id="boton-comprar" disabled>
+                                Comprar entradas
+                            </button>
+                        </div>
 
                         <!-- Aquí aparecen los avisos de error o de compra realizada -->
-                        <p class="mensaje" id="mensaje" role="status" aria-live="polite"></p>
+
+                        <div>
+                            <p class="mensaje" id="mensaje" role="status" aria-live="polite"></p>
+                        </div>
                     </aside>
-                </div>
-
-                <div>
-                    <!-- ---------- 2. Datos de la compra ---------- -->
-                    <div class="bloque datos">
-                        <div data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
-                            <h1 class="bloque__titulo">TUS DATOS</h1>
-                        </div>
-
-                        <div class="campos">
-                            <div data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="campo">
-                                <h2 for="nombre">Nombre y apellidos</h2>
-                                <input
-                                    type="text"
-                                    id="nombre"
-                                    name="nombre"
-                                    placeholder="Ej. Pepita Bigotes"
-                                    autocomplete="name" />
-                            </div>
-                            <div data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="campo">
-                                <h2 for="email">Email</h2>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="tu@email.com"
-                                    autocomplete="email" />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         </div>
@@ -364,7 +373,7 @@
                                 <a class="afooter" href="#">CONTACTO</a>
                             </li>
                             <li>
-                                <a class="afooter" href="#">ACTIVIDADES</a>
+                                <a class="afooter" href="index.html#actividades">ACTIVIDADES</a>
                             </li>
                         </nav>
                     </nav>
