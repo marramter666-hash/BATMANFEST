@@ -81,15 +81,28 @@ h1 {
     font-weight: var(--font-peso);
 }
 
+.infop {
+    font-size: 0.75rem;
+    font-family: var(--font-parrafo);
+    font-weight: 200;
+}
+
 span {
-    font-size: var(--size-párrafos);
+    font-size: 1.55rem;
     font-family: var(--font-parrafo);
     font-weight: 900;
 }
+
 .botonesA {
     font-family: var(--font-onomatopeya);
     font-weight: var(--font-peso);
     font-size: var(--size-onomatopeyas);
+}
+
+h2 {
+    font-family: var(--font-onomatopeya);
+    font-weight: var(--font-peso);
+    font-size: var(--size-grandep)
 }
 
 /* GENERAL */
@@ -206,7 +219,7 @@ header > div {
 
 .informacion > :first-child > :first-child {
     margin: 0vh 30vw 0vh 20vw;
-    padding: 4.25vh 1vw;
+    padding: 1vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-secundario);
@@ -216,7 +229,7 @@ header > div {
 
 .informacion > :first-child > :last-child {
     margin: 2vh 20vw 5vh 35vw;
-    padding: 4.25vh 1vw;
+    padding: 1vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-secundario);
@@ -276,38 +289,47 @@ header > div {
     background-color: var(--color-tercero);
     display: flex;
     justify-content: center;
-    transform: skewX(-20deg);
+    transform: skewX(-20deg) !important;
     color: var(--color-secundario);
 
 }
 
 .patrocinadores > :last-child {
-    margin: 5vh 10vw;
-    padding: 7vh 1vw;
+    margin: 0vh 5vw;
+    padding: 5vh 1vw 0vh 1vw;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    gap: 2.5vw;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
 }
 
 .logopatro {
     margin: 0;
-    padding: 0;
+    padding: 1vh 2vw;
     box-sizing: border-box;
     border: solid 6px var(--color-principal);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-    width: 20vw;
+    background-color: var(--color-secundario);
+    flex-direction: column;
+    justify-content: left;
+}
+
+.logopatro > div {
+    margin: 0;
+    padding: 2vh 0vw;
+    box-sizing: border-box;
+}
+
+.logopatro > div > h2 {
+    margin: 0;
+    padding: 0vh 0vw 1.5vh 0vw;
+    box-sizing: border-box;
 }
 
 .imgpatro {
-    height: auto;
-    width: 8vw;
+    height: 60vh;
+    width: auto;
 }
 
 
@@ -333,7 +355,7 @@ header > div {
     background-color: var(--color-tercero);
     display: flex;
     justify-content: center;
-    transform: skewX(-20deg);
+    transform: skewX(-20deg) !important;
     color: var(--color-secundario);
 }
 
@@ -417,11 +439,43 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6vw;
+    gap: 3vw;
+}
+
+.cabecera > :last-child > :first-child {
+    margin: 0vh 10vw 2vh 8vw;
+    padding: 1.25vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    transform: rotate(5deg)
+}
+
+.cabecera > :last-child > :nth-child(2) {
+    margin: 0vh 23vw 2vh 0vw;
+    padding: 2.25vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.cabecera > :last-child > :last-child {
+    margin: 0vh 6vw 0vh 6vw;
+    padding: 1.25vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
 }
 
 .principalimgB {
-    height: 50vh;
+    height: 60vh;
     width: auto;
 }
 

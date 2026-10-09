@@ -21,6 +21,15 @@
 <body>
     <div class="fondofijo"></div>
     <script src="JS/app.js" defer></script>
+    <script src="https://michalsnik.github.io/aos/"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+
 
 
     <main class="fondonegro">
@@ -65,7 +74,7 @@
         </header>
 
         <section class="principal">
-            <div>
+            <div data-aos="zoom-out-down" data-aos-duration="1200">
                 <img class="principalimg" src="galeria/section/BATMANFEST.png" alt="BATMANFEST">
             </div>
         </section>
@@ -73,18 +82,22 @@
         <div>
             <section class="informacion">
                 <div>
-                    <div>
-                        <p class="pinfo"><span>19</span> - <span>20 SEPT</span> 2026 - MADRID</p>
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
+                        <p class="pinfo"><span>19</span> - <span>20 SEPT.</span> 2026 - MADRID</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                         <p class="pinfo">PABELLONES <span>08</span> - <span>10</span></p>
                         <p class="pinfo">[<span>IFEMA</span> MADRID]</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                     <p class="pinfo">ACOMPAÑANOS EN EL DÍA INTERNACIONAL DE BATMAN. DURANTE EL BATMANFEST </p>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                     <li>
                         <a class="botonesA entradaono" href="entradas.html">¡¡¡ENTRADAS!!!</a>
                     </li>
@@ -92,10 +105,12 @@
             </section>
 
             <section class="galeria">
-                <div>
+                <div data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                     <h1 class="actividadono">ACTIVIDADES</h1>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                     <nav>
                         <li>
                             <a class="hoverimg" href="#">
@@ -141,7 +156,8 @@
                         </li>
                     </nav>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                     <li>
                         <a class="botonesA entradaono entradafooter activis" href=""><p>MÁS ACTIVIDADES</p></a>
                     </li>
@@ -149,29 +165,32 @@
             </section>
 
             <section class="patrocinadores">
-                <div>
+                <div data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                     <h1>HORARIO Y PLANO</h1>
                 </div>
                 <div>
-                    <div>
+                    <div data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
+                        <img class="imgpatro" src="galeria/plano/plano_oeste-m40.png" alt="plano">
+                    </div>
+                    <div class="logopatro" data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                         <div>
                             <h2>Lugar</h2>
-                            <p>IFEMA MADRID – Recinto Ferial, Av. Partenón 5, 28042 Madrid</p>
+                            <p class="pinfo">IFEMA MADRID – Recinto Ferial, Av. Partenón 5, 28042 Madrid</p>
                         </div>
                         <div>
                             <h2>Pabellones</h2>
                             <div>
-                                <p>Pabellón 08</p>
-                                <p>08:00 - 17:30</p>
+                                <p class="pinfo">Pabellón 08</p>
+                                <p class="pinfo">08:00 - 17:30</p>
                             </div>
                             <div>
-                                <p>Pabellón 10</p>
-                                <p>10:00 - 20:30</p>
+                                <p class="pinfo">Pabellón 10</p>
+                                <p class="pinfo">10:00 - 20:30</p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <img src="galeria/plano/plano_oeste-m40.png" alt="plano">
                     </div>
                 </div>
             </section>
