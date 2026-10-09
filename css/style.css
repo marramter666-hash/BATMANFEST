@@ -298,7 +298,7 @@ header > div {
 
 .entradaono {
     margin: 0vh 0vw 0vh 0vw;
-    padding: 5vh 2vw;
+    padding: 2vh 2vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
     background-color: var(--color-principal);
@@ -648,7 +648,7 @@ article {
 }
 
 .datos > :last-child > :first-child {
-    margin: 0vh 20vw 2vh 5vw;
+    margin: 0vh 15vw 2vh 5vw;
     padding: 2.25vh 1vw;
     box-sizing: border-box;
     border: solid 7px var(--color-principal);
@@ -785,34 +785,6 @@ footer > :first-child > :last-child > :last-child  > a{
         width: auto;
     }
 
-    /* a {
-        font-size: 1.7rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    .onomatopeya {
-        font-size: 2.5rem;
-    } */
-
-/* .fondofijo {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background-image: url('../galeria/fondo/FONDO.png'); 
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-}
-
-.fondonegro {
-    position: relative;
-    z-index: 1; 
-} */
 
 
 
@@ -820,7 +792,7 @@ footer > :first-child > :last-child > :last-child  > a{
 
 /* HEADER */
     header {
-        padding: 2vh 3vw 4vh 3vw;
+        padding: 2vh 3vw 2vh 3vw;
     }
 
     header > div > :nth-child(2) {
@@ -884,9 +856,6 @@ footer > :first-child > :last-child > :last-child  > a{
         box-sizing: border-box;
     }
 
-    .entradaono {
-        font-size: 3rem;
-    }
 
 
 
@@ -895,33 +864,45 @@ footer > :first-child > :last-child > :last-child  > a{
 /* SECCIÓN PATROCINADORES */
     .patrocinadores {
         margin: 0;
-        padding: 3vh 3vw;
-        box-sizing: border-box;
-    }
-
-    .patrocinadores > :first-child {
-        margin: 3vh 7vw; 
         padding: 3vh 0vw;
         box-sizing: border-box;
     }
 
+    .patrocinadores > :first-child {
+        margin: 3vh 15vw; 
+        padding: 3vh 0vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
     .patrocinadores > :last-child {
-        margin: 3vh 24vw;
-        padding: 4vh 5vw;
+        margin: 2vh 10vw;
+        padding: 4vh 0vw;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .logopatro {
-        height: 12vh;
-        width: 35vw;
+    .patrocinadores > :last-child > :last-child {
+        margin: 0vh 5vw;
+        padding: 2vh 5vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+    } 
+
+    .patrocinadores > :last-child > :last-child > :last-child > div {
+        display: flex;
+        justify-content: left;
+        gap: 1vw;
     }
 
     .imgpatro {
-        height: auto;
-        width: 10vw;
+        height: 55vw;
+        width: auto;
     }
 
 
@@ -929,35 +910,16 @@ footer > :first-child > :last-child > :last-child  > a{
 
 
 /* SECCIÓN GALERIA */
-.hoverimg {
-    display: grid;
-    place-items: center;
-    transition: 0.4s;
-}
-
-.galeria > :nth-child(2) > nav {
-    margin: 5vh 0vw;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.galeria > :nth-child(2) > nav > li {
-    margin: 2vh 0vw;
-    padding: 0;
-    box-sizing: border-box;
-}
-
     .galeria {
         margin: 0;
         padding: 5vh 5vw 10vh 5vw;
         box-sizing: border-box;
     }
 
-    .actividadono {
-        font-size: 3.5rem;
+    .galeria > :first-child {
+        margin: 2vh 20vw 2vh 20vw; 
+        padding: 2vh 1vw;
+        box-sizing: border-box;
     }
 
     .galeria > :first-child {
@@ -1014,87 +976,83 @@ footer > :first-child > :last-child > :last-child  > a{
     }
 
     .activis {
-        margin: 4vh 12vw 0vh 12vw;
-        padding: 3vh 0vw;
+        margin: 4vh 25vw 0vh 25vw;
+        padding: 2vh 0vw;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         color: var(--color-secundario);
     }
 
-
-
-
-
-
 /* FOOTER */
-/* .imgfooter{
-    height: 4vh;
-    width: auto;
+    footer > :first-child > :first-child > :first-child > li {
+        margin: 0;
+        padding: 2vh 0vw 2vh 0vw;
+        box-sizing: border-box;
+    }
+
+
+
+
+/* SECCION PARA ENTRADAS */
+/* SECCION CABECERA */
+    .cabecera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecera > :last-child > :first-child {
+        margin: 0vh 14vw 2vh 12vw;
+    }
+
+    .cabecera > :last-child > :nth-child(2) {
+        margin: 0vh 30vw 2vh 0vw;
+    }
+
+    .principalimgB {
+        height: 50vh;
+        width: auto;
+    }
+
+
+
+
+
+/* SECCION COMPRA */
+    .compra {
+        margin: 0;
+        padding: 10vh 10vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+/* SECCION RESUMEN */
+.resumen__fila {
+    margin: 0; 
+    padding: 0.5vh 0vw;
 }
 
-.footerimg{
-    height: auto;
-    width: 4vw;
+
+
+
+/* SECCION DATOS */
+.datos > div {
+    margin: 0; 
+    padding: 1vh 0vw;
 }
 
-.entradafooter {
-    transform: skewX(-20deg);
+.datos > :last-child > :first-child {
+    margin: 0vh 15vw 2vh 5vw;
 }
 
-footer {
-    margin: 0;
-    padding: 5vh 3vw 5vh 3vw;
-    box-sizing: border-box;
-    background-color: var(--color-secundario);
+.datos > :last-child > :last-child {
+    margin: 0vh 5vw 2vh 20vw;
 }
-
-footer > :first-child {
-    margin: 0;
-    padding: 0vh 5vw;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
-
-footer > :first-child > :first-child > :first-child > li {
-    margin: 0;
-    padding: 2vh 0vw 5vh 0vw;
-    box-sizing: border-box;
-}
-
-footer > :first-child > :first-child > :last-child {
-    margin: 0;
-    padding: 5vh 0vw 5vh 0vw;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer > :first-child > :last-child {
-    margin: 0;
-    padding: 5vh 0vw;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer > :first-child > :last-child > nav {
-    margin: 0;
-    padding: 3vh 0vw;
-}
-
-footer > :first-child > :last-child > :last-child {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.1vw;
-}
-
-footer > :first-child > :last-child > :last-child  > a{
-   font-size: 2.5rem;
-} */
 }
 
 
@@ -1235,7 +1193,6 @@ footer > :first-child > :last-child > :last-child  > a{
         margin: 0vh 0vw 0vh 0vw;
         padding: 5vh 2vw;
         box-sizing: border-box;
-        font-size: 2rem;
     }
 
 
