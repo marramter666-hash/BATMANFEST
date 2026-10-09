@@ -450,7 +450,7 @@ header > div {
     background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
-    transform: rotate(5deg)
+    transform: rotate(5deg);
 }
 
 .cabecera > :last-child > :nth-child(2) {
@@ -479,6 +479,10 @@ header > div {
     width: auto;
 }
 
+
+
+
+
 /* SECCION COMPRA */
 .compra {
     margin: 0;
@@ -491,21 +495,87 @@ header > div {
 }
 
 .compra > :first-child {
+    margin: 0;
+    padding: 0vh 0vw 10vh 0vw;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    gap: 6vw;
+    gap: 3vw;
+}
+
+.bloque > div {
+    margin: 0;
+    padding: 0vh 0vw 2vh 0vw;
+    box-sizing: border-box;
+}
+
+.bloque__titulo {
+    color: var(--color-secundario);
+}
+
+article {
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-secundario);
+    transform: skewX(-20deg) !important;
+    color: var(--color-principal);
+}
+
+.entrada {
+    margin: 3vh 0vw; 
+    padding: 2vh 1vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.entrada > div > div {
+    margin: 0; 
+    padding: 0.55vh 0vw;
+    box-sizing: border-box;
+}
+
+.entrada__controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--color-tercero);
+}
+
+.contador__boton {
+    margin: 0; 
+    padding: 0vh 1.5vw;
+    box-sizing: border-box;
+    background: var(--color-tercero);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--color-tercero) ease;
+}
+
+.contador__boton:hover {
+    background: var(--color-tercero);
+}
+
+.contador__boton:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: var(--color-tercero);
+}
+
+.bloque__nota {
+    color: var(--color-secundario);
 }
 
 .resumen {
-    margin: 0;
-    padding: 10hv 5vw;
-    position: sticky; 
-    top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    background-color: aqua;
+    margin: 0; 
+    padding: 5vh 1vw;
+    box-sizing: border-box;
+    border: solid 7px var(--color-principal);
+    background-color: var(--color-tercero);
+    color: var(--color-secundario);
 }
+
 
 
 
