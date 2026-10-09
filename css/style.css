@@ -566,8 +566,18 @@ article {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    gap: 5vw;
+}
+
+.entrada > :last-child > div > p {
+    padding: 1vh 0vw;
+    display: flex;
+    justify-content: center;
     gap: 2vw;
-    
+}
+
+.entrada > :last-child > div > p > strong {
+    width: 10vw;
 }
 
 .entrada > div > div {
@@ -631,6 +641,23 @@ article {
     padding: 1vh 0vw;
     display: flex;
     justify-content: space-between;
+}
+
+#boton-comprar {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    margin: 0vh 1vw;
+    padding: 2vh 2vw;
+    font-size: var(--size-bontones);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: var(--font-onomatopeya);
+}
+
+#boton-comprar:hover {
+    transform: scale(1.2);
 }
 
 
@@ -1015,6 +1042,8 @@ footer > :first-child > :last-child > :last-child  > a{
         width: auto;
     }
 
+    
+
 
 
 
@@ -1085,12 +1114,25 @@ footer > :first-child > :last-child > :last-child  > a{
 /* HEADER */
     header {
         margin: 0;
-        padding: 2vh 3vw 0vh 3vw;
+        padding: 2vh 3vw 2vh 3vw;
         box-sizing: border-box;
+    }
+
+    .aheader {
+        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%; 
     }
 
     .botonheader {
         display: none;
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+        gap: 0vw;
     }
 
     .logo {
@@ -1114,46 +1156,33 @@ footer > :first-child > :last-child > :last-child  > a{
         width: 100%;
         height: 100vh;
         background-color: var(--color-secundario);
-        transition: right 0.4s ease; 
+        transition: right 0.4s ease;
+        display: flex;
+        flex-direction: column;
     }
 
     .batido > .botonheader {
         list-style: none;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding-top: 50px;
+        align-items: left;
+        justify-content: center;
+        padding: 3vh 5vw;
+        font-weight: 900;
+    }
+
+    .aheader {
+        font-size: 3.5rem;
     }
 
     .batido > .botonheader > li {
-        margin: 20px 0;
+        margin: 1vh 2vw;
     }
 
     .batido.show {
         right: 0;
     }
 
-
-
-
-
-
-/* HEADER
-    header {
-        padding: 2vh 3vw 2vh 3vw;
-    }
-
-    header > div > :nth-child(2) {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 3vw;
-    }
-
-    .logo {
-        height: 5vh;
-        width: auto;
-    } */
 
 
 
@@ -1252,23 +1281,34 @@ footer > :first-child > :last-child > :last-child  > a{
 
 
 /* SECCION DATOS */
-.datos > div {
-    margin: 0; 
-    padding: 1vh 0vw;
-}
+    .datos > div {
+        margin: 0; 
+        padding: 1vh 0vw;
+    }
 
-.datos > :last-child > :first-child {
-    margin: 0vh 1vw 2vh 1vw;
-    padding: 2vh 2vw;
-    display: flex;
-    align-items: center;
-}
+    .datos > :last-child > :first-child {
+        margin: 0vh 1vw 2vh 1vw;
+        padding: 2vh 2vw;
+        display: flex;
+        align-items: center;
+    }
 
-.datos > :last-child > :last-child {
-    margin: 0vh 1vw 2vh 1vw;
-    display: flex;
-    align-items: center;
-}
+    .datos > :last-child > :last-child {
+        margin: 0vh 1vw 2vh 1vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .entrada {
+        margin: 2vh 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .entrada > :last-child > div > p > strong {
+        width: 15vw;
+    }
 
     
 
